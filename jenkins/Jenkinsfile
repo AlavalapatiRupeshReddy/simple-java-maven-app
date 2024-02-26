@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        maven 'Maven' // Use the version that satisfies the plugin requirement
+        maven 'maven3' // Use the version that satisfies the plugin requirement
     }
     stages {
         stage('Build') {
