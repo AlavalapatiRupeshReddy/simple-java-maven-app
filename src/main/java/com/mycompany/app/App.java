@@ -10,7 +10,9 @@ public class App {
     public App() {}
 
     public static void main(String[] args) {
+        for (i=0; i<10; i++){
         System.out.println(MESSAGE);
+        }
     }
 
     public String getMessage() {
