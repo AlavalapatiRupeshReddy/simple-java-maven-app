@@ -20,7 +20,7 @@ pipeline {
     steps {
         script {
             docker.withRegistry('https://index.docker.io/v1/', 'docker_cred') {
-                def dockerImage = docker.build("docker_image:${env.BUILD_ID}")
+                def dockerImage = docker.build("rupeshreddy17/maven:${env.BUILD_ID}")
                 dockerImage.push()
             }
         }
