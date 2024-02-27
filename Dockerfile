@@ -5,7 +5,7 @@ FROM adoptopenjdk:11-jre-hotspot
 WORKDIR /app
 
 # Copy the JAR file into the container at /app
-COPY target/my-app-1.0-SNAPSHOT.jar/app
+COPY target/my-app-1.0-SNAPSHOT.jar /app
 
 # Define environment variable
 ENV JAVA_OPTS=""
