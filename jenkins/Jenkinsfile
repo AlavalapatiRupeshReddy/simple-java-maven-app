@@ -4,12 +4,7 @@ pipeline {
         maven 'maven3' // Use the version that satisfies the plugin requirement
     }
     stages {
-        stage('checkout') {
-            steps {
-                git 'https://github.com/AlavalapatiRupeshReddy/simple-java-maven-app.git'
-            }
-        }
-            stage('Compile & build')
+       stage('Compile & build')
             {
             steps
                 {
