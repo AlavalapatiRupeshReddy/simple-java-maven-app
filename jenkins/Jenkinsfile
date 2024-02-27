@@ -26,7 +26,14 @@ pipeline {
         }
     }
 }
-
-
+ stage('Deoployed into local host')
+        {
+            steps {
+                 script 
+                {
+                    docker pull rupeshreddy17/maven:28
+                }
+            }
+        }
     }
 }
