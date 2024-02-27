@@ -15,5 +15,3 @@ EXPOSE 8080
 
 # Run your application when the container starts
 CMD ["java", "-jar", "my-app-1.0-SNAPSHOT.jar"]
-
-ENTRYPOINT ["tail", "-f", "/dev/null"]
