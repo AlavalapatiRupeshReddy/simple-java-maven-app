@@ -28,7 +28,7 @@ pipeline {
             docker.image("rupeshreddy17/maven:${env.BUILD_ID}").pull()
             //def BUILD_ID = env.BUILD_ID
            //echo "${BUILD_ID}"
-            sh 'docker run -p 9090:8080 rupeshreddy17/maven:"$env.BUILD_ID"'
+            sh 'docker run -p 9090:8080 rupeshreddy17/maven:"env.BUILD_ID"'
           //def dockerContainer = docker.image("rupeshreddy17/maven:${env.BUILD_ID}").run('-p 9090:8080')
 
            
