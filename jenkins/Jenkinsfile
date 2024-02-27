@@ -8,6 +8,14 @@ pipeline {
             steps {
                 git 'https://github.com/AlavalapatiRupeshReddy/simple-java-maven-app.git'
             }
+        }
+            stage('Compile & build')
+            {
+            step
+                {
+                   sh "${env.MAVEN_HOME}/bin/mvn clean package" 
+                }
+                
         }  
     }
 }
