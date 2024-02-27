@@ -31,7 +31,7 @@ pipeline {
             steps {
                  script 
                 {
-                    docker pull rupeshreddy17/maven:28
+                    docker pull rupeshreddy17/maven:${env.BUILD_ID}
                 }
             }
         }
