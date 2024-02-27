@@ -28,7 +28,7 @@ pipeline {
             docker.image("rupeshreddy17/maven:${env.BUILD_ID}").pull()
 
             // Run the Docker container on a different local port (e.g., 9090)
-            def container = docker.container('rupeshreddy17/maven:${env.BUILD_ID}').withRun('-p 9090:8080')
+            def container = docker.container("rupeshreddy17/maven:${env.BUILD_ID}").withRun('-p 9090:8080')
 
             // Wait for the container to exit
             container.wait()
