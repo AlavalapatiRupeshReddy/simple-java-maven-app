@@ -29,8 +29,7 @@ pipeline {
 
           def dockerContainer = docker.image("rupeshreddy17/maven:${env.BUILD_ID}").run('-p 9090:8080')
 
-            // Wait for the container to exit
-            dockerContainer.wait()
+           
         }
     }
 }
