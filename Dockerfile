@@ -14,4 +14,4 @@ ENV JAVA_OPTS=""
 EXPOSE 8080
 
 # Run your application when the container starts
-CMD ["java", "-jar", "my-app-1.0-SNAPSHOT.jar"]
+ENTRYPOINT exec java -jar my-app-1.0-SNAPSHOT.jar --info
